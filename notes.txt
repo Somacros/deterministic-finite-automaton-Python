@@ -1,11 +1,37 @@
 delta = {
+    "q0":{
+        "b":{
+            "pop":E,
+            "insert":1,
+            "nextState":'q0'
+        },
+        "a":{
+            "pop":E,
+            "insert":2,
+            "nextState":'q0'
+        },
+        "c":{
+            "pop":2,
+            "insert":E,
+            "nextState":'q1'
+        }
+    },
     "q1":{
-        "a":"q4",
-        "b":"q2"
-    },
-    "q2":{
-        "a":"q5",
-        "b":"q1"
-    },
-    
+        "b":{
+            "pop":1,
+            "insert":E,
+            "nextState":'q1'
+        },
+        "a":{
+            "pop":2,
+            "insert":E,
+            "nextState":'q1'
+        }
+    }
 }
+
+f = ["q0,b,E","q0,1"]
+
+ft = [["q0","b","E"], ["q0","1"]]
+
+ft = 
